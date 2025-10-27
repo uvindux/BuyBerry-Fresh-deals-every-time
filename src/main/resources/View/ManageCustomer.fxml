@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="549.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageCustomerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="622.0" />
+      <Label layoutX="171.0" layoutY="13.0" text="Manage Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="103.0" text="ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="103.0" text="Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="155.0" text="Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="155.0" text="Salary">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="109.0" layoutY="99.0" prefHeight="29.0" prefWidth="110.0" promptText="Customer ID">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtCustomerName" layoutX="413.0" layoutY="99.0" prefHeight="29.0" prefWidth="183.0" promptText="Customer Name">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtCustomerAddress" layoutX="109.0" layoutY="152.0" prefHeight="29.0" prefWidth="176.0" promptText="Customer Address">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtCustomerSalary" layoutX="413.0" layoutY="151.0" prefHeight="29.0" prefWidth="131.0" promptText="Customer Salary">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Button layoutX="538.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnOnActionAddCustomer" prefHeight="27.0" prefWidth="58.0" text="Add " textFill="#3f21ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblCustomers" layoutX="16.0" layoutY="275.0" prefHeight="214.0" prefWidth="592.0">
+        <columns>
+          <TableColumn fx:id="colCustomerId" prefWidth="101.33334541320801" text="ID" />
+          <TableColumn fx:id="colCustomerName" prefWidth="166.00006866455078" text="Name" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="185.333251953125" text="Address" />
+            <TableColumn fx:id="colCustomerSalary" prefWidth="136.66659545898438" text="Salary" />
+        </columns>
+      </TableView>
+      <Button layoutX="245.0" layoutY="497.0" mnemonicParsing="false" onAction="#btnOnActionLoadTable" prefHeight="27.0" prefWidth="122.0" text="Load Table">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="264.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnOnActionDeleteCustomer" prefHeight="21.0" prefWidth="79.0" text="Delete " textFill="#ff2121">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="358.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnOnActionUpdateCustomer" prefHeight="27.0" prefWidth="79.0" text="Update" textFill="#13b310">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="449.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnOnActionSearchCustomer" prefHeight="27.0" prefWidth="79.0" text="Search" textFill="#d0ac0e">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="26.000030517578125" endY="-100.66666412353516" layoutX="280.0" layoutY="191.0" opacity="0.27" startX="26.000030517578125" startY="3.2928924560546875" stroke="DODGERBLUE" />
+      <Line endX="-250.00001525878906" endY="-62.0" layoutX="265.0" layoutY="200.0" opacity="0.27" startX="343.33331298828125" startY="-62.0" stroke="DODGERBLUE" />
+      <Line endX="-243.3333282470703" endY="-62.0" layoutX="257.0" layoutY="257.0" opacity="0.27" startX="347.66668701171875" startY="-61.99998474121094" stroke="DODGERBLUE" />
+   </children>
+</AnchorPane>

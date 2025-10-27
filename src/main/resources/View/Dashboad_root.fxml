@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.ParallelCamera?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.DashboadController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="623.0" layoutX="-10.0" layoutY="-11.0" stroke="BLACK" strokeType="INSIDE" width="239.0" />
+      <Button layoutX="28.0" layoutY="252.0" mnemonicParsing="false" onAction="#CustomerAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" text="Customer Managment" textFill="WHITE" />
+      <Button layoutX="28.0" layoutY="301.0" mnemonicParsing="false" onAction="#ItemAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" text="Item Managmenrt" textFill="WHITE" />
+      <Button layoutX="28.0" layoutY="203.0" mnemonicParsing="false" onAction="#DashboadAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" text="Dashboad" textFill="WHITE" />
+      <AnchorPane fx:id="root" accessibleText="gggggg" layoutX="220.0" prefHeight="606.0" prefWidth="686.0" stylesheets="@../CSS/Style.css">
+         <children>
+            <Accordion layoutX="53.0" layoutY="432.0" prefHeight="84.0" prefWidth="606.0">
+              <panes>
+                <TitledPane accessibleText="vvvffff" animated="false" ellipsisString="ddddddddddddddddddd" text="untitled 1" textOverrun="CLIP">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" text="untitled 2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" ellipsisString="ddddddd" text="untitled 3" textOverrun="CENTER_WORD_ELLIPSIS">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <AmbientLight color="CHARTREUSE" layoutX="230.0" layoutY="120.0" lightOn="true" />
+            <ParallelCamera layoutX="174.0" layoutY="250.0" />
+         </children></AnchorPane>
+      <Button layoutX="28.0" layoutY="148.0" mnemonicParsing="false" onAction="#AboutAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5678;" text="Guidline Report" textFill="WHITE" />
+      <Button fx:id="OderButton" layoutX="28.0" layoutY="351.0" mnemonicParsing="false" onAction="#OderAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" text="Transaction " textFill="WHITE" />
+      <Label layoutX="40.0" layoutY="30.0" text="Label" />
+      <Icon content="PERSON" layoutX="29.0" layoutY="519.0" prefHeight="34.0" prefWidth="44.0" style="-fx-background-color: #3d5878;" />
+      <Label layoutX="82.0" layoutY="528.0" text="Label" />
+   </children>
+</AnchorPane>
