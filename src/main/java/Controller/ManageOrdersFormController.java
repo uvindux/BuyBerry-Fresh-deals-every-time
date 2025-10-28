@@ -111,12 +111,12 @@ public class ManageOrdersFormController implements Initializable {
         timeline.play();
 
     }
-    CustomerService customerService= ServiceFactory.getInstance().getServiceFactoryType(ServiceType.CUSTOMER);
-
-    private void loadCustomerIDs(){
-       customerService.getCustIds();
-
-    }
+//    CustomerService customerService= ServiceFactory.getInstance().getServiceFactoryType(ServiceType.CUSTOMER);
+//
+//    private void loadCustomerIDs(){
+//       customerService.getCustIds();
+//
+//    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
