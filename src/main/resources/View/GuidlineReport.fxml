@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GuidlineController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ab2c9" height="130.0" layoutX="10.0" layoutY="-7.0" stroke="#2f30306e" strokeType="INSIDE" width="843.0" />
+      <Label layoutX="215.0" layoutY="33.0" prefHeight="68.0" prefWidth="638.0" stylesheets="@../CSS/Dashboad.css" text="Guidline Report For Sales Team">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="301.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quick insights to boost your daily performance.">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="64.0" layoutY="149.0" prefHeight="406.0" prefWidth="726.0" stylesheets="@../CSS/Dashboad.css" text="Objective:&#10;&#10;To ensure smooth daily operations, accurate data management, and exceptional customer service through the effective use of the BuyBerry POS system.&#10;&#10;1. System Login and Data IntegrityAlways log in using your assigned credentials before starting sales activities. This helps maintain accurate transaction records and ensures accountability for each shift&#10;&#10;.2. Product and Inventory ManagementBefore processing orders, verify that product details such as price, stock quantity, and category are up to date. Regularly update any new arrivals or changes in item information to prevent billing errors and stock discrepancies&#10;&#10;3. Customer Information HandlingCollect and update customer details accurately. Properly recorded data supports better customer relationship management, loyalty tracking, and personalized promotions.&#10;&#10;4. Order and Transaction AccuracyReview every order before confirming a sale. Check item quantities, prices, and payment types carefully to avoid discrepancies. Record all transactions immediately to maintain real-time accuracy in reports.&#10;&#10;5. Utilizing SellSense AIUse the SellSense AI feature to access instant sales reports, view top-selling products, and analyze daily performance. The AI assistant helps reduce manual report-checking and supports quick decision-making.&#10;&#10;6. Data Synchronization and BackupAt the end of each shift, ensure that all sales and customer data are synchronized or backed up to the central system. This prevents data loss and keeps management reports up to date.&#10;&#10;7. Professional Conduct and Customer ServiceMaintain a positive and professional attitude with every customer interaction. Quick, polite, and efficient service helps improve customer satisfaction and promotes repeat business&#10;&#10;.8. Continuous ImprovementRegularly review your daily performance and reports to identify areas for improvement. Discuss any issues or system suggestions with the management to enhance overall efficiency." wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

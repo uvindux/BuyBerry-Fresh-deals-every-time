@@ -1,49 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.Icon?>
 <?import javafx.scene.AmbientLight?>
 <?import javafx.scene.ParallelCamera?>
-<?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.DashboadController">
+<AnchorPane fx:id="root_two" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.DashboadController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="623.0" layoutX="-10.0" layoutY="-11.0" stroke="BLACK" strokeType="INSIDE" width="239.0" />
-      <Button layoutX="28.0" layoutY="252.0" mnemonicParsing="false" onAction="#CustomerAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" text="Customer Managment" textFill="WHITE" />
-      <Button layoutX="28.0" layoutY="301.0" mnemonicParsing="false" onAction="#ItemAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" text="Item Managmenrt" textFill="WHITE" />
-      <Button layoutX="28.0" layoutY="203.0" mnemonicParsing="false" onAction="#DashboadAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" text="Dashboad" textFill="WHITE" />
-      <AnchorPane fx:id="root" accessibleText="gggggg" layoutX="220.0" prefHeight="606.0" prefWidth="686.0" stylesheets="@../CSS/Style.css">
+      <Rectangle fx:id="root2" arcHeight="5.0" arcWidth="5.0" fill="#9ab2c9" height="638.0" layoutX="-4.0" layoutY="-11.0" stroke="TRANSPARENT" strokeType="INSIDE" width="233.0" />
+      <Button fx:id="BtnCustomerManage" layoutX="28.0" layoutY="273.0" mnemonicParsing="false" onAction="#CustomerAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" stylesheets="@../CSS/Dashboad.css" text="Customer Management" textFill="WHITE" />
+      <Button fx:id="BtnItem" layoutX="28.0" layoutY="322.0" mnemonicParsing="false" onAction="#ItemAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" stylesheets="@../CSS/Dashboad.css" text="Item Management" textFill="WHITE" />
+      <AnchorPane fx:id="root" layoutX="218.0" layoutY="3.0" prefHeight="623.0" prefWidth="802.0" stylesheets="@../CSS/Style.css">
          <children>
-            <Accordion layoutX="53.0" layoutY="432.0" prefHeight="84.0" prefWidth="606.0">
-              <panes>
-                <TitledPane accessibleText="vvvffff" animated="false" ellipsisString="ddddddddddddddddddd" text="untitled 1" textOverrun="CLIP">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
-                </TitledPane>
-                <TitledPane animated="false" text="untitled 2">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
-                </TitledPane>
-                <TitledPane animated="false" ellipsisString="ddddddd" text="untitled 3" textOverrun="CENTER_WORD_ELLIPSIS">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
-                </TitledPane>
-              </panes>
-            </Accordion>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff14" height="104.0" layoutX="580.0" layoutY="429.0" stroke="#00000077" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff14" height="104.0" layoutX="322.0" layoutY="429.0" stroke="#00000071" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff14" height="104.0" layoutX="74.0" layoutY="429.0" stroke="#00000066" strokeType="INSIDE" width="200.0">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ab2c9" height="130.0" layoutX="11.0" layoutY="-8.0" stroke="#e9edf24d" strokeType="INSIDE" width="835.0" />
             <AmbientLight color="CHARTREUSE" layoutX="230.0" layoutY="120.0" lightOn="true" />
             <ParallelCamera layoutX="174.0" layoutY="250.0" />
+            <Label layoutX="233.0" layoutY="23.0" prefHeight="68.0" prefWidth="610.0" stylesheets="@../CSS/Dashboad.css" text="Welcome back to BuyBerry ">
+               <font>
+                  <Font name="Bell MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <Line endX="11.999984741210938" endY="-96.0" layoutX="-1.0" layoutY="88.0" startX="11.792892456054688" startY="32.29290008544922" stroke="#3d5678" />
+            <Label layoutX="251.0" layoutY="82.0" prefHeight="18.0" prefWidth="493.0" stylesheets="@../CSS/Dashboad.css" text="Every sale counts — let’s make today fresh and fruitful!" textAlignment="CENTER" />
+            <Label layoutX="53.0" layoutY="147.0" prefHeight="18.0" prefWidth="493.0" text="For Our Sales Champions" textAlignment="CENTER" textFill="#292a2b" underline="true" wrapText="true">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="45.0" layoutY="192.0" prefHeight="216.0" prefWidth="754.0" stylesheets="@../CSS/Dashboad.css" text="Here, every interaction counts. Remember, our customers are our priority, and a positive attitude makes all the difference. Keep these principles in mind:&#10;&#10;1.Customer is King &#10;Treat every customer with respect and care. Listen actively and make them feel valued. A happy customer is a loyal customer!&#10;&#10;2.Smile Always &#10;A genuine smile is contagious. It creates a friendly atmosphere and leaves a lasting impression.&#10;&#10;3.Be Approachable &amp; Friendly &#10;Make customers feel comfortable. Friendly greetings, helpful guidance, and patience go a long way.&#10;&#10;4.Stay Positive &amp; Energetic &#10;Your energy reflects in your service. Approach every sale with enthusiasm and optimism.&#10;&#10;5.Attention to Detail &#10;Small things matter: correct orders, prompt responses, and remembering customer preferences make a huge difference.&#10;&#10;6.Continuous Improvement &#10;Learn from each interaction. Seek feedback and always look for ways to provide even better service.&#10;&#10; 7.Problem-Solving Mindset &#10;Challenges are opportunities. Address issues calmly and efficiently, ensuring the customer leaves satisfied.&#10;&#10;Remember: Every smile, every word, and every helpful gesture builds a stronger relationship. Your positivity is your superpower!" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="15.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="97.0" layoutY="447.0" text="Registered Customers">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtCustomerCount" layoutX="142.0" layoutY="481.0" text="1000">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="379.0" layoutY="447.0" text="Verified Items">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtSalesCount" layoutX="399.0" layoutY="481.0" text="1000">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtAmount" layoutX="651.0" layoutY="481.0" text="1000">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ab2c9" height="50.0" layoutX="11.0" layoutY="573.0" stroke="#eaeff400" strokeType="INSIDE" width="835.0" />
+            <Label layoutX="636.0" layoutY="447.0" text="Net Amount">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Line endX="12.999984741210938" endY="-31.0" layoutX="-2.0" layoutY="604.0" startX="12.999984741210938" startY="18.0" stroke="#3d5678" />
+            <Label layoutX="322.0" layoutY="589.0" prefHeight="18.0" prefWidth="493.0" stylesheets="@../CSS/Dashboad.css" text="© 2025 BuyBurry POS. All rights reserved." textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
-      <Button layoutX="28.0" layoutY="148.0" mnemonicParsing="false" onAction="#AboutAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5678;" text="Guidline Report" textFill="WHITE" />
-      <Button fx:id="OderButton" layoutX="28.0" layoutY="351.0" mnemonicParsing="false" onAction="#OderAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" text="Transaction " textFill="WHITE" />
-      <Label layoutX="40.0" layoutY="30.0" text="Label" />
-      <Icon content="PERSON" layoutX="29.0" layoutY="519.0" prefHeight="34.0" prefWidth="44.0" style="-fx-background-color: #3d5878;" />
-      <Label layoutX="82.0" layoutY="528.0" text="Label" />
+      <Button fx:id="BtnGuidLineReport" layoutX="26.0" layoutY="218.0" mnemonicParsing="false" onAction="#GuidlineOnAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5678;" stylesheets="@../CSS/Dashboad.css" text="Guideline Report" textFill="WHITE" />
+      <Button fx:id="OderButton" layoutX="28.0" layoutY="375.0" mnemonicParsing="false" onAction="#OderAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" stylesheets="@../CSS/Dashboad.css" text="Transaction " textFill="WHITE" />
+      <Label layoutX="67.0" layoutY="29.0" prefHeight="30.0" prefWidth="94.0" text="BuyBerry">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font></Label>
+      <Label layoutX="22.0" layoutY="67.0" prefHeight="18.0" prefWidth="176.0" text="   Fresh deals. Smart insights." />
+      <Label layoutX="74.0" layoutY="94.0" prefHeight="18.0" prefWidth="198.0" text="V.1.0.0.0" />
+      <Button fx:id="BtnForAiBot" layoutX="28.0" layoutY="426.0" mnemonicParsing="false" onAction="#AiBotOnAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5878;" stylesheets="@../CSS/Dashboad.css" text="SellSense AI" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="546.0" text="💬 Need help? Contact Support">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="569.0" text="💬 Call - -0705716510">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnDashboad" layoutX="26.0" layoutY="163.0" mnemonicParsing="false" onAction="#DashboadOnAction" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #3d5678;" stylesheets="@../CSS/Dashboad.css" text="Dashboad" textFill="WHITE" />
    </children>
 </AnchorPane>

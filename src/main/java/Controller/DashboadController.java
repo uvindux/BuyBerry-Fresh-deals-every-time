@@ -14,6 +14,7 @@ import java.util.ResourceBundle;
 
 public class DashboadController implements Initializable {
 
+    public AnchorPane root_two;
     @FXML
     private AnchorPane root;
 
@@ -48,7 +49,7 @@ public class DashboadController implements Initializable {
     }
     @FXML
     void OderAction(ActionEvent event) throws IOException {
-        Parent load = FXMLLoader.load(getClass().getResource("../view/oderForm.fxml"));
+        Parent load = FXMLLoader.load(getClass().getResource("../View/oderForm.fxml"));
         assert root != null;
         root.getChildren().clear();
         root.getChildren().add(load);
@@ -59,5 +60,24 @@ public class DashboadController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+    }
+
+    public void AiBotOnAction(ActionEvent actionEvent) {
+    }
+
+    public void GuidlineOnAction(ActionEvent actionEvent) throws IOException {
+        Parent load = FXMLLoader.load(getClass().getResource("../view/GuidlineReport.fxml"));
+        assert root != null;
+        root.getChildren().clear();
+        root.getChildren().add(load);
+
+    }
+
+    public void DashboadOnAction(ActionEvent actionEvent) throws IOException {
+
+        Parent load = FXMLLoader.load(getClass().getResource("../View/Dashboad_root.fxml"));
+        assert root_two != null;
+        root_two.getChildren().clear();
+        root_two.getChildren().add(load);
     }
 }

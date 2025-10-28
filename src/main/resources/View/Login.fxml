@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6ecff1c" height="333.0" layoutX="144.0" layoutY="34.0" stroke="#00000022" strokeType="INSIDE" width="327.0" />
+      <Label layoutX="250.0" layoutY="89.0" prefHeight="18.0" prefWidth="116.0" text="BuyBurry" textFill="#0c989e">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="126.0" />
+      <Label layoutX="223.0" layoutY="126.0" text="   Fresh deals. Smart insights." />
+      <Label layoutX="190.0" layoutY="156.0" text="Please Enter Your Passkey to Securely Access to the System">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPasskey" layoutX="182.0" layoutY="225.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter Your Passkey">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="182.0" layoutY="201.0" text="Passkey">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnLogin" layoutX="249.0" layoutY="286.0" mnemonicParsing="false" onAction="#LoginOnAction" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #0C989E;" text="Login" textFill="WHITE" />
+   </children>
+</AnchorPane>
